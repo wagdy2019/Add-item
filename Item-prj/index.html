@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>test</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+
+<body class="bg-dark">
+    
+
+<!-- The Input -->
+
+<div class="the-parent text-center">
+  <div class="py-5">
+    <h1 class="text-white">Bookmark Site</h1>
+    <hr class="bg-white w-50">
+  </div>
+  <div class="container text-center">
+   
+
+     <form>
+        <div class="input-group input-group-lg">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Name Site</span>
+          </div>
+          <input id="nameSite" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"  placeholder="Type your name website" required>
+        </div>
+       
+        <div class="input-group input-group-lg py-5">
+          <div class="input-group-prepend">
+            <span class="input-group-text" >Url Site</span>
+          </div>
+          <input  id="urlSite" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Type your url website" required>
+        </div>
+     </form>
+
+      <button id="buttonSubmit" onclick="addSite()" type="button" class="btn btn-primary">Submit</button>
+      <button id="buttonClear" onclick="clearForm()" type="button" class="btn btn-danger ml-4">Clear</button>
+
+
+  </div>
+  <hr class="bg-white py-4 my-5">
+</div>
+
+<div class="text-center container mb-5 w-25">
+  <input class=" form-control" type="text" id="searchInput" onkeyup="search(this.value)">
+  <div id="searchDiv"></div>
+</div>
+ 
+<table class="table bg-info table-striped container text-center">
+
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+
+
+  <tbody id="the-table-body">
+  
+  </tbody>
+</table>
+  
+
+
+    <script src="/js/jquery-3.4.1.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/sweetalert.min.js"></script>
+    <script src="/js/main.js"></script>
+    
+</body>
+</html>
